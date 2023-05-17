@@ -6,8 +6,8 @@ from json import loads
 
 
 class MailruCloudDispatcherApiRequester:
-    def __init__(self, api_version=2, email='mail@mail.ru', lifetime=86400):
-        self.api_version, self.email, self.lifetime = api_version, email, lifetime
+    def __init__(self, lifetime=86400, email='mail@mail.ru', api_version=2):
+        self.lifetime, self.email, self.api_version = lifetime, email, api_version
         self.request_link: str | None = None
         self.request_answer: dict | None = None
 
@@ -34,6 +34,8 @@ class MailruCloudFileStreamLinkGenerator:
         self.dispatcher_api_requester = dispatcher_api_requester
         self.file_id = file_public_link[len('https://cloud.mail.ru/public/'):]
         self.file_stream_link: str | None = None
+
+        self.generate_link()
 
     @property
     def file_public_link(self):
