@@ -1,4 +1,4 @@
 .idea/
-__pychache__/
 
+*.pyc
 test.py
