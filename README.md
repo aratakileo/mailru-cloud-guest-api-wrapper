@@ -1,6 +1,9 @@
 # mailru-cloud-guest-api
 Non-official wrapper API for mail.ru cloud designed to generate a link or links to a file stream via a public link, for example to download file as a guest
 
+### Requirements
+- `python >= 3.10`
+
 ### Install
 ```
 pip install git+https://github.com/teacondemns/mailru-cloud-guest-api-wrapper.git
