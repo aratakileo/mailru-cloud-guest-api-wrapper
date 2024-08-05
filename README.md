@@ -74,7 +74,7 @@ print(file_stream_link_generator.download('my_file.zip'))
 
 ### License
 ```
-Copyright (c) 2023 Tea Condemns
+Copyright (c) 2024 Arataki Leo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
